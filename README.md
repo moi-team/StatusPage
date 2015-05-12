@@ -1,6 +1,10 @@
-UptimeRobot Public Status Page
+Status Page | MOi Solutions
 ==============================
 
-Activar alerta:
+Página para mostrar el estado de los sistemas de MOi Solutions.
+
+## Activar alerta
+
+Desde la línea de comandos ejecutar:
 
     heroku config:set ALERT_ENABLED=1
