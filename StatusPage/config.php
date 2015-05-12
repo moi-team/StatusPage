@@ -1,9 +1,9 @@
 <?php
 //Uptime Robot API Key
-$apiKey = 'Your-API-Key';
+$apiKey = getenv('API_KEY');
 
 //Text to display on Nav Bar and page title
-$websitename = 'Status Page';
+$websitename = 'MOi Solutions';
 
 //How often the page should refresh the checks
 $pagerefreshtime = '05:00';
