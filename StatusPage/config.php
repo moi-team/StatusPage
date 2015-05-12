@@ -19,13 +19,13 @@ $percentGreen = 99;
 $percentYellow = 96;
 
 //Display an alert at the top of the page alerting the user
-$alertEnabled = True;
+$alertEnabled = getenv('ALERT_ENABLED');
 //What type of message could be displayed (sucess, warning, info, alert, secondary, standard)
 //You can see what each color looks like here: http://foundation.zurb.com/docs/components/alert_boxes.html
-$alertType = 'warning';
+$alertType = ($alertEnabled == 1) ? 'alert' : 'success';
 
 //What the alert box should say
-$alertMessage = 'We are working on the downtime';
+$alertMessage = ($alertEnabled == 1) ? getenv('ALERT_MESSAGE') : getenv('DEFAULT_MESSAGE');
 
 //checks to exclude from the status page. This info can be found in the UptimeRobot URL for each check
 //$excludedchecks = array("776396792", "776396743");
