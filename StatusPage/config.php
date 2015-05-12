@@ -6,20 +6,20 @@ $apiKey = getenv('API_KEY');
 $websitename = 'MOi Solutions';
 
 //How often the page should refresh the checks
-$pagerefreshtime = '05:00';
+$pagerefreshtime = '01:00';
 
 //Uptime percentage for following days
 $historyDay = array(1, 7, 30, 360);
 
 //Display names for the uptime percentage of the previous days
-$historyDaysNames = array('Past 24 Hours', 'Past Week', 'Past Month', 'Past Year');
+$historyDaysNames = array('Últimas 24 Horas', 'Semana Pasada', 'Pasado Mes', 'Año Pasado');
 
 //On the status page what percentage is what color
 $percentGreen = 99;
 $percentYellow = 96;
 
 //Display an alert at the top of the page alerting the user
-$alertEnabled = False;
+$alertEnabled = True;
 //What type of message could be displayed (sucess, warning, info, alert, secondary, standard)
 //You can see what each color looks like here: http://foundation.zurb.com/docs/components/alert_boxes.html
 $alertType = 'warning';
@@ -32,9 +32,9 @@ $alertMessage = 'We are working on the downtime';
 $excludedChecks = array();
 
 //Show a link to your twitter in the nav bar
-$showTwitter = False;
-$twitterURL = 'https://twitter.com/nerdbaggy';
-$twitterTitle = 'Status Twitter';
+$showTwitter = True;
+$twitterURL = 'https://twitter.com/MOiSolutions';
+$twitterTitle = 'MOi Solutions';
 
 //You can remove the Powered By OpenStatusPage, but I might cry!
-$showFooter = True;
+$showFooter = False;
